@@ -1,4 +1,4 @@
-# Aws::Sdk::Sts
+# Aws::STS
 
 This gem is a stub that attempts to warn you that you installed the wrong package. AWS's STS library is bundled with aws-sdk-iam, you'll likely want to install that instead.
 
