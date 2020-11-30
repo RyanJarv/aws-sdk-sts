@@ -6,7 +6,7 @@ module Aws; end
 
 module Aws::STS
 
-  GEM_VERSION = '0.1.2'
+  GEM_VERSION = '0.1.3'
 
 end 
 

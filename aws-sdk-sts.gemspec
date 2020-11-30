@@ -8,7 +8,9 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Placeholder gem that does nothing.}
   spec.description   = %q{
-It attempts to warn you that the wrong gem is installed when executed. I'll likely look for a better way to do this later. Homepage is a placeholder, will make a post about this soon.
+This gem is a stub that attempts to warn you that you installed the wrong package. AWS's STS library is bundled with aws-sdk-iam, you'll likely want to install that instead.
+
+Right now this just thows an error on Aws::STS::Client.new. When I get some time i'll look into if it's possible to throw an error during the install process instead.
 }
 
   spec.homepage      = "https://blog.ryanjarv.sh/"
@@ -23,4 +25,20 @@ It attempts to warn you that the wrong gem is installed when executed. I'll like
 
   spec.files         = Dir['lib/**/*.rb']
   spec.require_paths = ["lib"]
+
+  spec.post_install_message = %q{
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+                                                    ** IMPORTANT **
+
+You have installed the wrong gem, the AWS STS client is included in 'aws-sdk-iam'. You likely want to install that instead.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+}
 end
