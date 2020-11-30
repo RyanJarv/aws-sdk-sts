@@ -4,19 +4,22 @@ Gem::Specification.new do |spec|
   spec.name          = "aws-sdk-sts"
   spec.version       = Aws::Sdk::Sts::VERSION
   spec.authors       = ["RyanJarv"]
-  spec.email         = ["ryan_gerstenkorn@fastmail.fm"]
+  spec.email         = ["me@ryanjarv.sh"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Placeholder gem that does nothing.}
+  spec.description   = %q{
+It attempts to warn you that the wrong gem is installed when executed. I'll likely look for a better way to do this later. Homepage is a placeholder, will make a post about this soon.
+}
+
+  spec.homepage      = "https://blog.ryanjarv.sh/"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
-  spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
+  spec.metadata["allowed_push_host"] = "https://rubygems.org"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+  spec.metadata["source_code_uri"] = "https://github.com/ryanjarv/aws-sdk-sts"
+  spec.metadata["changelog_uri"] = "https://github.com/ryanjarv/aws-sdk-sts"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
