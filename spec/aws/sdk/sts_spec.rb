@@ -1,9 +1,9 @@
-RSpec.describe Aws::Sdk::Sts do
+RSpec.describe Aws::STS do
   it "has a version number" do
-    expect(Aws::Sdk::Sts::VERSION).not_to be nil
+    expect(Aws::STS::GEM_VERSION).not_to be nil
   end
 
   it "does something useful" do
-    expect(false).to eq(true)
+    expect(Aws::STS::Client.new).not_to be nil
   end
 end
