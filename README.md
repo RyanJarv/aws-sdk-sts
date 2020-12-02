@@ -1,3 +1,7 @@
+# Update
+
+This gem was transferred to AWS and the info below relates to this GitHub repo only, and not the gem found at [aws-sdk-sts](https://rubygems.org/gems/aws-sdk-sts).
+
 # Aws::STS
 
 This gem is a stub that attempts to warn you that you installed the wrong package. AWS's STS library is bundled with aws-sdk-iam, you'll likely want to install that instead.
